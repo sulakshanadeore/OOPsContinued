@@ -1,0 +1,45 @@
+﻿Interfaces
+----------
+1) Interface is a contract becoz it behaves differently with different classes.
+It is used for handling Multiple Inheritance, which is directly not supported by .net.
+
+If you inherit multiple class in a single classes, and those multiple classes have same method signatures with same method names,
+then a "diamond problem" arises.
+
+
+Interface has only method declaration, the implementations are done in the classes who inherit the interface.
+1)One interface can inherit another interface, and that another interface can be inherited by the class.
+2) There are two interfaces, who are not inherited by either of them and both are inherited by the class.
+3) The class inherits more than one interfaces, directly or directly along with one more class, but the class must be written
+first in the sequence of Inheritance.
+
+****Interface name must start with a 'I'
+
+
+********************************************************************
+*Dependency Injection: loosely coupled applications, use Interfaces.*
+********************************************************************
+
+YOU cannot instantiate a interface or a abstract classes.
+
+
+====================================================================================
+ABSTRACT CLASSES:
+
+1) They are meant for inheritance, where some of the things are concrete and some are non-concrete.
+concrete---- The methods which have  a body ,ie they are implemented.
+non-concrete----The methods which dont have a body. Such methods are to be declared/marked abstract methods/members.
+Abstract methods/(abstract keyword) can only be written with abstract class.
+Abstract class can inherit a interface. But  a interface CANNOT inherit abstract class.
+EVERY ABSTRACT CLASS MUST HAVE ATLEAST ONE ABSTRACT METHOD/MEMBER.
+The abstract member is by default "VIRTUAL", ie when the other  class inherits &  implements abstract member,
+it becomes override.
+
+
+
+
+
+
+
+
+
